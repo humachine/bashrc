@@ -51,12 +51,13 @@ set shiftwidth=4
 set tags=./tags,tags;$HOME
 filetype indent plugin on
 set autowrite
-autocmd filetype c noremap <F2> :make <CR>
-autocmd filetype cpp noremap <F2> :make <CR>
-autocmd filetype java noremap <F2> :make <CR>
-autocmd filetype java noremap <F3> :!javac % <CR>
-autocmd filetype c noremap <F3> :!gcc % <CR>
-autocmd filetype cpp noremap <F3> :!g++ % <CR>
+set pastetoggle=<F2>
+autocmd filetype c noremap <F3> :make <CR>
+autocmd filetype cpp noremap <F3> :make <CR>
+autocmd filetype java noremap <F3> :make <CR>
+autocmd filetype java noremap <F4> :!javac % <CR>
+autocmd filetype c noremap <F4> :!gcc % <CR>
+autocmd filetype cpp noremap <F4> :!g++ % <CR>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 let mapleader=","
