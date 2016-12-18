@@ -9,6 +9,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdcommenter'
+
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -62,3 +64,4 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 let mapleader=","
 set timeout timeoutlen=1500
+vmap <leader>y "+y
