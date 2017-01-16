@@ -1,16 +1,14 @@
+set nocompatible              " be iMproved, required
 filetype off                  " required
-
 execute pathogen#infect()
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
-
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -27,7 +25,6 @@ Plugin 'scrooloose/nerdcommenter'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,7 +39,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
 set hlsearch
 set ruler
 set expandtab
@@ -50,7 +46,7 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 set pastetoggle=<F4>
-set tags=./tags,tags;$HOME
+"set tags=./tags,tags;$HOME
 filetype indent plugin on
 set autowrite
 autocmd filetype c noremap <F2> :make <CR>
@@ -59,8 +55,8 @@ autocmd filetype java noremap <F2> :make <CR>
 autocmd filetype java noremap <F3> :!javac % <CR>
 autocmd filetype c noremap <F3> :!gcc % <CR>
 autocmd filetype cpp noremap <F3> :!g++ % <CR>
-nmap <CR> o<Esc>
-nmap <S-Enter> O<Esc>
+"nmap <CR> o<Esc>
+"nmap <S-Enter> O<Esc>
 let mapleader=","
 set timeout timeoutlen=1500
 vmap <leader>y "+y
@@ -68,4 +64,5 @@ map <F7> :g/^$/d <CR>
 syntax on
 set t_Co=256
 colorscheme molokai
+set colorcolumn=80
 "colorscheme elflord

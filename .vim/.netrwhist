@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/morpheus/.vim'
+let g:netrw_dirhist_2='/home/morpheus/codes'
+let g:netrw_dirhist_3='/home/morpheus'
+let g:netrw_dirhist_4='/home/morpheus/.vim'
+let g:netrw_dirhist_5='/home/morpheus/codes/algolearning/leetcode/Done'
+let g:netrw_dirhist_6='/home/morpheus/codes/github/PocketDeleteTag'
